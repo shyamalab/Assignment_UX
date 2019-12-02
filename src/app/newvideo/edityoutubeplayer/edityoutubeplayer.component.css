@@ -1,0 +1,31 @@
+#error{
+    color:red;
+    font-size: medium;
+    }
+    h3{
+     color:rgba(235, 17, 137, 0.514);
+     font-weight: bold; 
+    }
+    /* div.container custom-container{
+        left: 170px;
+    } */
+    
+    .col-centered {
+        display:inline-block;
+        float:none;
+        /* reset the text-align */
+        text-align:left;
+        /* inline-block space fix */
+        margin-right:-4px;
+        left:270px;
+        text-align: center;
+        background-color: rgba(28, 137, 226, 0.616);
+        border: 1px solid #ddd;
+    }
+    .col-xs-4{
+        margin-left:190px;
+    }
+    .control-label{
+        color:brown;
+        font-weight: bold; 
+    }

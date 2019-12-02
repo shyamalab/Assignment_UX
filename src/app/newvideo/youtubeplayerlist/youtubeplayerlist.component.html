@@ -1,0 +1,37 @@
+<div class="container custom-container-2">
+  <div *ngIf="YouTubes.length !== 0">
+    <h3 class="mb-3 text-center">Video Player List</h3>
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col"> S.No</th>
+            <th scope="col">Title</th>
+            <th scope="col">Youtube URL</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let tube of YouTubes; let id = index">
+            <td>{{id+1}}</td>
+            <td>{{tube.title}}</td>
+            <td>{{tube.url}}</td>
+            <td>
+              <button class="edit" routerLink="/editvideoplayer/{{tube.id}}"
+                class="btn btn-success btn-lg btn-block">Edit</button>
+            </td>
+            <td><button class="delete" (click)="deletevideoplayer(tube.id)" class="btn btn-danger">Delete</button></td>
+
+            <td><button class="Approve" (click)="approvevideoPlayer(tube.id)" value="approved"
+                class="btn btn-success btn-lg btn-block" [disabled]="(tube.approved == '1')? true:false">
+                Approve</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

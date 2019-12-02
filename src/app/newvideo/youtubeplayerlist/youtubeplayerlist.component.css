@@ -1,0 +1,14 @@
+ .custom-container-2{
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    text-align: center;
+    background-color: lightseagreen;
+    border: 1px solid lightblue;
+}
+h3{
+    font-size: 150%;
+    font-weight: bold;
+    color:darkslateblue;
+}

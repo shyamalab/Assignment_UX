@@ -1,0 +1,184 @@
+body {
+	font-family: 'verdana';
+	padding-top: 62px;
+}
+
+body, html {
+	height: 100%;
+}
+
+.content {
+	max-width: 500px;
+	margin: auto;
+	background: white;
+	padding: 10px;
+}
+
+h1 {
+	font-size: 16px;
+	color: #333;
+
+}
+
+#media-player {
+	float: center;
+	padding: 1em 1em .5em;
+	background-color: darkblue;
+	
+}
+
+video {
+	border: 2px solid #2e52a4;
+	width: 405px;
+	height: 320px;
+	background: #000;
+
+}
+
+#media-video {
+	float: center;
+	height: 300px;
+	width: 280px;
+	padding-left: 0px;
+	border-left-width: 5px;
+}
+#media-play-list {
+	float: center;
+	clear: both;
+	color: #aaa;
+	width: 100%;
+	margin-top: 10px;
+	height: 390px; border-top : 1px solid #2e52a4;
+	background-color: yellow;
+	border-top: 1px solid #2e52a4;
+}
+
+#media-play-list  h2 {
+	font-size: 12px;
+}
+
+#play-list {
+	padding-left: 10px;
+	font-size: 12px;
+	list-style-type: none;
+}
+
+#play-list li {
+	cursor: pointer;
+	padding-left: 20px;
+	font-size: 20px;
+    color: darkgreen;
+    width: 450px;
+}
+
+b #play_Text {
+	color: rgb(139, 16, 64);
+    width: 1000px;
+}
+
+#media-play-list h2 {
+	padding-left: 10px;
+	font-size: 20px;
+	color: blue;
+}
+
+@media screen and (max-width: 34em) {
+	.row-offcanvas-left
+  .sidebar-offcanvas {
+		left: -45%;
+	}
+	.row-offcanvas-left.active {
+		left: 45%;
+	}
+	.sidebar-offcanvas {
+		width: 45%;
+	}
+}
+
+@media ( max-width :34em) {
+	.navbar .navbar-brand {
+		float: none;
+		display: block;
+	}
+	.navbar .navbar-nav>.nav-item {
+		float: none;
+		margin-left: .1rem;
+	}
+	.navbar .navbar-nav {
+		float: none !important;
+	}
+}
+
+.card {
+	overflow: hidden;
+}
+
+.card-body .rotate {
+	z-index: 8;
+	float: right;
+	height: 100%;
+}
+
+.card-body .rotate i {
+	color: rgba(20, 20, 20, 0.15);
+	position: absolute;
+	left: 0;
+	left: auto;
+	right: -10px;
+	bottom: 0;
+	display: block;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+@media screen and (max-width: 48em) {
+	.row-offcanvas {
+		position: relative;
+		-webkit-transition: all 0.25s ease-out;
+		-moz-transition: all 0.25s ease-out;
+		transition: all 0.25s ease-out;
+	}
+	.row-offcanvas-left
+  .sidebar-offcanvas {
+		left: -33%;
+	}
+	.row-offcanvas-left.active {
+		left: 33%;
+	}
+	.sidebar-offcanvas {
+		position: absolute;
+		top: 0;
+		width: 33%;
+		height: 100%;
+	}
+}
+
+.container-fluid {
+	margin: 30px 30px;
+	width: 100%;
+}
+
+footer {
+	background-color: #f2f2f2;
+	padding: 25px;
+}
+
+.navbar {
+	color: green;
+	background-color: #f2f2f2;
+	
+}
+#play-item{
+
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: blue;
+	color: red;
+	padding-left: 4px;
+}

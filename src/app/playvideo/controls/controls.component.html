@@ -1,0 +1,30 @@
+<div id="button_device">
+  <button id="Play" (click)="youTubePlayerPlaynew()" [disabled]="Playing"><span class="glyphicon glyphicon-triangle-top"></span></button>
+  &nbsp;
+  <button id="Pause" (click)="youTubePlayerPausenew()" [disabled]="Paused"><span class="glyphicon glyphicon-pause"></span></button> &nbsp;
+  <button id="Stop" (click)="youTubePlayerStopnew()" [disabled]="Stopped"><span class="glyphicon glyphicon-stop"></span></button> &nbsp;
+  <button id="Mute" onclick="youTubePlayerMute()"><span class="glyphicon glyphicon-headphones"></span></button> &nbsp;
+  <button id="Replay" (click)="youTubePlayerReplaynew()"><span class="glyphicon glyphicon-repeat"></span></button>
+  &nbsp;
+  <button id='volume-inc-button' class='volume-plus' title='increase volume'
+    (click)='youTubePlayerVolumeChangeInc("+");'>
+    <span class="glyphicon glyphicon-plus-sign"></span>
+  </button>&nbsp;
+
+  <button id='volume-dec-button' class='volume-minus' title='decrease volume'
+    (click)='youTubePlayerVolumeChangeInc("-");'>
+    <span class="glyphicon glyphicon-minus-sign"></span>
+  </button>&nbsp;
+  <button class="likes" (click)="likevideo()">
+    <span class="glyphicon glyphicon-thumbs-up"></span> {{likevalue}}
+  </button> &nbsp;
+  <button class="unlikes" (click)="unlikevideo()">
+    <span class="glyphicon glyphicon-thumbs-down"></span>{{unlikevalue}}
+  </button>
+</div>
+<br>
+<div>
+  <progress id='YouTube-player-progress' #progressvalue min='0' max='100' value='0'
+    onchange="youTubePlayerCurrentTimeChange(this.value);" oninput="youTubePlayerCurrentTimeSlide();">0%
+    played</progress>
+</div>

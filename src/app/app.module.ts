@@ -1,18 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, RouteComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ConfigfakerestService } from './Configfakerest.service';
+import { ShareserviceService } from './shareservice.service';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RouteComponents
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ConfigfakerestService, ShareserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

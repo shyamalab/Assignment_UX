@@ -1,0 +1,60 @@
+{
+  "youtube": [
+    {
+      "id": 2,
+      "title": "Angular 6 Tutorial",
+      "url": "https://www.youtube.com/watch?v=yG0oBPtyNb0",
+      "status": "edited",
+      "approved": 0,
+      "likes": 7,
+      "unlike": 74,
+      "currentStatus": "Playing",
+      "exitplayprogress": 0
+    },
+    {
+      "id": 3,
+      "title": "Nikon P900 83X Zoom",
+      "url": "https://www.youtube.com/watch?v=m7kdx9b_Jvk",
+      "status": "edited",
+      "approved": 0,
+      "likes": 10,
+      "unlike": 1,
+      "currentStatus": "paused",
+      "exitplayprogress": 80
+    },
+    {
+      "id": 4,
+      "title": "Understanding Javascript",
+      "url": "https://www.youtube.com/watch?v=6lNQlpCcpKI",
+      "status": "edited",
+      "approved": 1,
+      "likes": 35,
+      "unlike": 98,
+      "currentStatus": "Paused",
+      "exitplayprogress": 29
+    },
+    {
+      "id": 6,
+      "title": "Sample YouTube",
+      "url": "https://www.youtube.com/watch?v=Vh6estB9kqk",
+      "status": "edited",
+      "approved": 0,
+      "likes": 0,
+      "unlike": 0,
+      "currentstatus": "",
+      "exitplayprogress": 0
+    },
+    {
+      "id": 7,
+      "title": "Angular 8 Tutorial",
+      "url": "https://www.youtube.com/watch?v=0eWrpsCLMJQ",
+      "status": "edited",
+      "approved": 1,
+      "likes": 1,
+      "unlike": 4,
+      "currentstatus": "",
+      "exitplayprogress": 2,
+      "currentStatus": "Playing"
+    }
+  ]
+}
